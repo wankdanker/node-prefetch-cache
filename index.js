@@ -23,12 +23,14 @@ function PrefetchCache (options) {
 
 	options.fetchAll(function (err, store) {
 		self.store = store;
+
+		self.emit('ready');
 	});
 }
 
 inherits(PrefetchCache, EventEmitter);
 
-PrefetchCache.get = function (key, cb) {
+PrefetchCache.prototype.get = function (key, cb) {
 	var self = this;
 
 	if (self.store[key]) {
@@ -38,5 +40,9 @@ PrefetchCache.get = function (key, cb) {
 
 	self.options.fetch(key, function (err, data) {
 		self.store[key] = data;
+
+		cb(null, data);
 	});
 };
+
+

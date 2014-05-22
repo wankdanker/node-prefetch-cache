@@ -4,7 +4,7 @@
   "description": "A cache store for node that can optionally prefill the store",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm test.js"
   },
   "repository": {
     "type": "git",
