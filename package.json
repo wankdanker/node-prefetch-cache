@@ -1,0 +1,24 @@
+{
+  "name": "prefetch-cache",
+  "version": "0.0.0",
+  "description": "A cache store for node that can optionally prefill the store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wankdanker/node-prefetch-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "prefill",
+    "prefetch"
+  ],
+  "author": "Dan VerWeire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wankdanker/node-prefetch-cache/issues"
+  },
+  "homepage": "https://github.com/wankdanker/node-prefetch-cache"
+}
